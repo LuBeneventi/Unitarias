@@ -63,7 +63,7 @@ class MascotaServiceTest {
     @Test
     public void TestObtenerMascota() {
         Mascotas mascotaMock = new Mascotas();
-        mascotaMock.setId(1L); // suposición de que Mascotas tiene setId
+        mascotaMock.setId(1L); 
         when(mRepo.findById(1L)).thenReturn(Optional.of(mascotaMock));
 
         Optional<Mascotas> result = mService.obtenerMascota(1L);
